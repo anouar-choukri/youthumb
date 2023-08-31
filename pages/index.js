@@ -1,9 +1,12 @@
 import { useState } from "react";
 import copy from "copy-to-clipboard";
+import { redirect } from "next/dist/server/api-utils";
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
   const [thumbnailOptions, setThumbnailOptions] = useState([]);
+
+  
 
   const getYouTubeThumbnail = (url) => {
     let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
@@ -57,6 +60,7 @@ const Index = () => {
         >
           Download Thumbnails
         </button>
+        
       </div>
       {thumbnailOptions.length > 0 && (
         <div className="mt-8">
@@ -65,12 +69,12 @@ const Index = () => {
             {thumbnailOptions.map((option, index) => (
               <div key={index} className="thumbnail-option">
                 <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-                <button
-                  className="btn-blue mt-2"
-                  onClick={() => copy(option.url)}
-                >
-                  Copy Image URL
-                </button>
+                <a href={option.url} target="_blank" rel="noopener noreferrer">
+                  <div><button className="btn-blue mt-2">
+                    Visit Thumbnail
+                  </button>
+                  </div>
+                </a>
               </div>
             ))}
           </div>

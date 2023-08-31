@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 40vh;
 }
 
 /* Style the input and button for the YouTube URL */
@@ -30,7 +30,7 @@ input[type="text"] + button {
 
 /* Style the "Download Thumbnails" button */
 .btn-blue {
-  background-color: #3498db;
+  background-color: #ff0000;
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -40,7 +40,7 @@ input[type="text"] + button {
 }
 
 .btn-blue:hover {
-  background-color: #2680c5;
+  background-color: #c52626;
 }
 
 /* Style the thumbnail options */
@@ -65,7 +65,7 @@ input[type="text"] + button {
 
 /* Style the "Copy Image URL" button */
 .thumbnail-option button {
-  background-color: #3498db;
+  background-color: #db3434;
   color: white;
   font-weight: bold;
   padding: 0.3rem 0.6rem;
@@ -75,5 +75,24 @@ input[type="text"] + button {
 }
 
 .thumbnail-option button:hover {
-  background-color: #2680c5;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.title {
+  display: block;
+  text-align: center;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.parag {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px; 
 }
