@@ -6,14 +6,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <DefaultSeo
-        title="Youtube Thumbnail Downloader"
-        description="Download high-quality thumbnails from YouTube videos."
-        canonical="https://your-website-url.com"
+        title="YouTube Thumbnail Downloader - Download high-quality thumbnails"
+        description="Download youtube thumbnail Images all quality (4K , HD, HQ, 1080p). in just a few seconds without registration."
+        canonical="https://www.downloadytthumbnails.com/"
         openGraph={{
-          url: "https://your-website-url.com",
-          title: "Youtube Thumbnail Downloader",
-          description: "Download high-quality thumbnails from YouTube videos.",
-          site_name: "Youtube Thumbnail Downloader",
+          url: "https://www.downloadytthumbnails.com/",
+          title: "YouTube Thumbnail Downloader - Download high-quality thumbnails",
+          description: "Download youtube thumbnail Images all quality (4K , HD, HQ, 1080p). in just a few seconds without registration.",
+          site_name: "Youtube Thumbnail Downloader - Download high-quality thumbnails",
         }}
       />
       <Component {...pageProps} />
